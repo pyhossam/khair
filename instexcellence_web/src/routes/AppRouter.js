@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Department from '../components/Department/Department';
 import DepartmentDetails from '../components/Department/DepartmentDetails';
 import Program from '../components/Program/Program';
+import Projects from '../components/Projects/Projects';
 
 
 const AppRouter = () => {
@@ -13,7 +14,10 @@ const AppRouter = () => {
     <Routes>
       <Route path="/" element={<Department />} />
       <Route exact path="/department/:id" element={<DepartmentDetails />}/>
-      <Route exact path="/Program/:id" element={<Program />}/>  </Routes>
+      <Route exact path="/Program/:id" element={<Program />}/> 
+      <Route exact path="/Projec/:id" element={<Projects />}/> 
+      
+       </Routes>
       
       
   </Router>
