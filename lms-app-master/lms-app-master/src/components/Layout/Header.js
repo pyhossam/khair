@@ -1,7 +1,12 @@
 // Layout/Header.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import UserProfileImage from './UserProfileImage'; // Import UserProfileImage
+
 const Header = () => {
+  // You can pass the user profile image URL as a prop to UserProfileImage
+  const userProfileImageUrl = 'user_profile_image.png';
+
   return (
     <div className="header">
       <div className="logo">
@@ -11,7 +16,8 @@ const Header = () => {
         <h1>School Name</h1>
       </div>
       <div className="user-profile">
-        <img src="user_profile_image.png" alt="User Profile" />
+        {/* Include UserProfileImage component with the user profile image URL */}
+        <UserProfileImage imageUrl={userProfileImageUrl} />
       </div>
       <nav>
         <Link to="/">Home</Link>
