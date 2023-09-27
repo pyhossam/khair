@@ -1,7 +1,7 @@
 // Routs.js
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { useAuth } from "./AuthContext";
+import { useAuth } from "../AuthContext";
 import Layout from '../components/Layout/Layout';
 import Login from '../components/Home/Login';
 import RegistrationForm from '../components/Home/RegistrationForm';

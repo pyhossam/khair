@@ -1,10 +1,9 @@
 // src/api/api.js
-import axios from 'axios';
 
-const API_URL = 'your_backend_api_url_here';
 
-const api = axios.create({
-  baseURL: API_URL,
-});
+const BASE_URL = 'https://localhost:7166/api'; // Replace with your API base URL
 
-export default api;
+export const API_ENDPOINTS = {
+  login: `${BASE_URL}/Auth/login`,
+  
+};
